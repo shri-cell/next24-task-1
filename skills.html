@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        
+        .skill-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .skill-card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1e3a8a;
+        }
+        .skill-card p {
+            font-size: 1rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Skills</h1>
+            <nav>
+                <a href="index.html" class="text-white">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Creative Skills Section -->
+    <section id="skills" class="bg-gray-200 py-12">
+        <div class="container mx-auto p-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="skill-card">
+                    <h3>Java</h3>
+                    <p>Proficient in building applications using Java.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Spring Boot</h3>
+                    <p>Experienced in creating microservices with Spring Boot.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>HTML & CSS</h3>
+                    <p>Skilled in designing responsive web pages.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Capable of developing dynamic front-end applications.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>SQL</h3>
+                    <p>Adept at writing and optimizing SQL queries.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Git</h3>
+                    <p>Proficient in version control with Git.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

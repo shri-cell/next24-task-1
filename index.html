@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #82a7d3; /* Light gray background */
+            font-family: 'Roboto', sans-serif;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+        .interactive-font {
+            font-family: 'Pacifico', cursive;
+            color: #6b7280; /* Gray color */
+        }
+        .name-font {
+            font-family: 'Roboto', sans-serif;
+            color: #4b5563; /* Dark gray color */
+        }
+        .subtext-font {
+            font-size: 1.5rem; /* Font size increased */
+            color: #6b7280; /* Gray color */
+        }
+        .highlight-font {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.3rem; /* Font size */
+            font-weight: 700; /* Bold */
+            color: #6d28d9; /* Purple color */
+        }
+        .developer-font {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.8rem; /* Increased font size */
+            font-weight: 700; /* Bold */
+            color: #3b82f6; /* Blue color */
+        }
+        .light-gray-text {
+            color: #6b7280; /* Light gray color */
+        }
+        .dark-blue-text {
+            color: #1e3a8a; /* Dark blue color */
+        }
+        .big-a {
+            font-size: 3.5rem; /* Increased font size */
+        }
+        .contact-btn {
+            background-color: #6d28d9; /* Purple background */
+            color: #ffffff; /* White text */
+            transition: background-color 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: #4c1d95; /* Darker purple on hover */
+        }
+        .hire-btn {
+            background-color: #22c55e; /* Green background */
+            color: #ffffff; /* White text */
+            transition: background-color 0.3s ease;
+        }
+        .hire-btn:hover {
+            background-color: #16a34a; /* Darker green on hover */
+        }
+        .cv-btn {
+            background-color: #3b82f6; /* Blue background */
+            color: #ffffff; /* White text */
+            transition: background-color 0.3s ease;
+        }
+        .cv-btn:hover {
+            background-color: #1d4ed8; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="header-bg text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+            <nav class="space-x-4">
+                <a href="about.html" class="text-white hover:text-gray-200">About</a>
+                <a href="skills.html" class="text-white hover:text-gray-200">Skills</a>
+                <a href="projects.html" class="text-white hover:text-gray-200">Projects</a>
+                <a href="contact.html" class="text-white hover:text-gray-200">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="container mx-auto my-12 p-8 flex flex-col md:flex-row items-center justify-between bg-white rounded-lg shadow-lg">
+        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <h2 class="text-5xl md:text-6xl mb-4">
+                <span class="interactive-font block">Hi,</span>
+                <span class="name-font block">I'm Shrikant Kale </span>
+            </h2>
+            <p class="subtext-font mb-8"><span class="developer-font text-3xl text-blue-600 relative">A <span class="border-blue-600 pb-1">Frontend Developer</span></span></p>
+            <p class="highlight-font mb-8 light-gray-text">This is my official portfolio website to showcase all my works related to web development.</p>
+            <a href="C:\Users\ASUS\OneDrive\Pictures\Saved Pictures\shrikant cv.jpg" download class="cv-btn py-3 px-6 rounded-full text-lg font-semibold shadow-lg">Download CV</a>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.3IsXMskZyheEWqtE3Dr7JwHaGe&pid=Api&rs=1&c=1&qlt=95&w=135&h=118" alt="Profile Photo" class="w-64 h-64 rounded-full object-cover shadow-lg">
+        </div>
+    </section>
+
+    <!-- Contact and Hire Me Section -->
+    <section class="container mx-auto my-12 p-8 flex flex-col md:flex-row items-center justify-between bg-white rounded-lg shadow-lg">
+        <!-- Contact Me Section -->
+        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            <p class="text-gray-700 mb-4">Let's connect and discuss your next project.</p>
+            <div class="flex justify-center md:justify-start">
+                <a href="contact.html" class="contact-btn py-2 px-6 rounded-full text-lg font-semibold shadow-lg">Contact</a>
+            </div>
+        </div>
+
+        <!-- Hire Me Section -->
+        <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+            <h2 class="text-3xl font-bold mb-4">Hire Me</h2>
+            <p class="text-gray-700 mb-4">Looking for a dedicated frontend developer?</p>
+            <div class="flex justify-center md:justify-start">
+                <a href="hire-me.html" class="hire-btn py-2 px-6 rounded-full text-lg font-semibold shadow-lg">Hire Me</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
